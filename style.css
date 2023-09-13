@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* some definitions */
+:root{
+    --font-headimg:var(font-family: 'Poppins', sans-serif;);
+    --font-body:var(font-family: 'Open Sans', sans-serif;)
+}
+
+/* start hero section */
+.hero{
+    background-image: url(images/bg-hero-desktop.svg);
+    font-family: var(Poppins);
+    background-size: cover;
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-family: var(--font-headimg);
+}
+.logo-image{
+    padding-left: 70px;
+}
+.nav .button{
+    padding-right: 70px;
+}
+.nav-button{
+    padding: 11px 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s ease;    
+}
+.nav-button a{
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+.nav-button:hover{
+    transform: scale(1.08);
+}
+.nav-button:hover a{
+    color: hsl(192, 100%, 9%);
+
+}
+.hero-content{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content-text h2{
+    font-size: 50px;
+    margin-bottom: 25px;
+    
+}
+.hero-content-text p{
+    line-height: 20px;
+    padding-bottom: 40px;
+}
+
+.hero-content-img{
+    width: 50%;
+}
+.hero-content-img img{
+    width: 100%;
+    height: 80vh;
+}
+.hero-content-button{
+    padding: 25px 50px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color:hsl(322, 100%, 66%);
+    transition: all 0.2s ease;    
+}
+
+.hero-content-button:hover{
+    transform: scale(1.08);
+}
+.hero-content-button a{
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+}
+/* end  hero section */
+/* start feature section */
+.feature{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.feature-icons{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 55vh;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(90, 90, 90, 0.2), 0 2px 7px 0 rgba(90, 90, 90, 0.2);
+    margin-top: 50px;
+}
+.feature-image{
+    width: 35%;
+    height: 90%;
+    padding: 15px 0;
+
+}
+.feature-image .feature-img{
+    width: 100%;
+    height: 100%;
+}
+.feature-text h3{
+    margin-bottom: 20px;
+}
+.feature-text p{
+    line-height: 25px;
+    color:grey ;
+}
+
+/* end feature section */
+/* start pop section  */
+.pop{
+    
+    width: 75%;
+    margin: auto;
+    margin-top: 90px;
+   
+}
+.pop1{
+ 
+    width: 100%;
+    /* width: 50%; */
+    margin: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 4px 4px 0 rgba(90, 90, 90, 0.2), -5px -4px 4px 0 rgba(90, 90, 90, 0.2);
+    border-radius: 10px;
+    background-color: white ;
+    
+   
+}
+.pop1 h2{
+    margin-bottom: 30px;
+   
+}
+.pop1 button{
+    padding: 20px 15px;
+    width: 300px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color:hsl(322, 100%, 66%) ;
+    color: white;
+    cursor: pointer;
+}
+
+/* end pop section  */
+/* strat footer */
+footer{
+    position: absolute;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: -70px;
+    z-index: -1;
+    width: 100%;
+    color: white;
+    height: 65vh;
+ 
+}
+.footer-img{
+  margin-right: 15px;
+}
+.footer {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.ul1 ul,
+.ul2 ul,
+.ul3 ul{
+    list-style-type:none;
+    font-size: 18px;
+}
+.ul1 ul li,
+.ul2 ul li,
+.ul3 ul li{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.ul2 ul li:hover ,
+.ul3 ul li:hover{
+    text-decoration:underline;
+}
+.ul4{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    font-size: 18px;
+}
+.ul4 i {
+    width: 30px;
+}
+.ul4 i:hover{
+    color:hsl(322, 100%, 66%) ;
+}
+
+/* end footer */
+
+
+/* start media query */
+@media only screen and (max-width: 600px) {
+    /* start hero section */
+    .hero{
+        background-image: url(images/bg-hero-mobile.svg);
+        font-family: var(Poppins);
+        background-size: cover;
+        height: 100vh;
+        
+    }
+    .logo-image {
+        padding-left: 20px;
+        width: 170px;
+    }
+    .nav .button{
+        padding: 20px;
+    }
+    .nav-button {
+        padding: 4px 20px;
+    }
+    .hero-content {
+        flex-direction: column;
+    text-align: center;
+        
+    }
+    .hero-content-img{
+        width: 75%;
+    }
+    .hero-content-img img {
+        width: 100%;
+        height: 40vh;
+    }
+    /* start feature section  */
+    .feature-icons {
+        display: flex;
+       flex-direction: column-reverse;
+        text-align: center;
+        height: 60vh;
+    }
+    .feature-image {
+        width: 70%;
+        height: 250px;
+        padding: 15px 0;
+    }
+    .two-icons{
+        display: flex;
+        flex-direction: column;
+    }
+    /* start pop section  */
+    .pop1{
+        width: 90%;
+        height: 150px;
+    }
+    .pop1 h2{
+        font-size: 14px;
+    }
+    .pop1 button{
+        width: 200px;
+        padding: 5px;
+    }
+    /* start footer  */
+    footer{
+        height: 100%
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .ul4{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         margin-top: 20px;
+        }
+        .ul4 i {
+            margin-bottom: 5px;
+        }
+       
+    
+    /* .text-footer{
+        text-overflow: ellipsis;
+    } */
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* start hero section */
+    .logo-image {
+        padding-left: 20px;
+    }
+    .nav .button{
+        padding-right: 30px;
+    }
+
+.hero-content-text{
+    width: 40%;
+}
+.hero-content-button {
+    padding: 15px 30px;
+}
+.feature-text  {
+width: 40%;
+}
+/* start pop section  */
+.pop{
+    width: 60%;
+}
+.pop1{
+    width: 100%;
+}
+.footer{
+    font-size: 10px;
+    }
+
+}
+/* end media query */
